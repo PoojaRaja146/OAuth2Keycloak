@@ -311,8 +311,8 @@
       "postman-client": [
         {
           "id": "117c6440-94e6-4f4f-8cc8-2e15b339a21b",
-          "name": "ROLE_admin",
-          "description": "full access",
+          "name": "dev",
+          "description": "dev access",
           "composite": false,
           "clientRole": true,
           "containerId": "d8a56cfb-730d-425f-872e-d7d76c0fcd84",
@@ -320,7 +320,7 @@
         },
         {
           "id": "d5971479-f490-4dd1-a8c8-c25048efc5b9",
-          "name": "ROLE_user",
+          "name": "manager",
           "description": "Restricted access",
           "composite": false,
           "clientRole": true,
@@ -524,6 +524,78 @@
       "clientRoles":{
         "postman-client":[
           "user"
+        ]
+      }
+    },
+    {
+      "username":"john",
+      "firstName":"john",
+      "lastName":"deol",
+      "email":"john-deol@keycloak.org",
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"admin"
+        }
+      ],
+      "clientRoles":{
+        "postman-client":[
+          "admin"
+        ]
+      }
+    },
+    {
+      "username":"anu",
+      "firstName":"anu",
+      "lastName":"manual",
+      "email":"anu-manual@keycloak.org",
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"user"
+        }
+      ],
+      "clientRoles":{
+        "postman-client":[
+          "user"
+        ]
+      }
+    },
+    {
+      "username":"cyrus",
+      "firstName":"cyrus",
+      "lastName":"jayee",
+      "email":"cyrus-jayee@keycloak.org",
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"dev"
+        }
+      ],
+      "clientRoles":{
+        "postman-client":[
+          "dev"
+        ]
+      }
+    },
+    {
+      "username":"gerg",
+      "firstName":"gerg",
+      "lastName":"corn",
+      "email":"gerg-corn@keycloak.org",
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"manager"
+        }
+      ],
+      "clientRoles":{
+        "postman-client":[
+          "manager"
         ]
       }
     },
